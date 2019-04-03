@@ -1,0 +1,24 @@
+{
+  "name": "nodechatfromscratch",
+  "version": "1.0.0",
+  "description": "hopewillsuccess",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlindHonk0897/NodeFromScratch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlindHonk0897/NodeFromScratch/issues"
+  },
+  "homepage": "https://github.com/BlindHonk0897/NodeFromScratch#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "socket.io": "^2.2.0"
+  }
+}
