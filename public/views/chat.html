@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel = "shortcut icon" href = "../images/pn-logo.png">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+   <script src="/js/handler.js"></script>
+   <!-- <script src="/js/database.js"></script> -->
+</head>
+<body>
+   <div id="logout"><input  type="submit" name="" value="Log Out" disabled="" id="logO" ></div>
+   <div id = "title-Label">
+      <h1><font color="#fff">{ CHIKA BOX }</font></h1>
+      <hr>
+   </div>
+   <div id ="logo-Image">
+      <img src="../images/pn-logo.png">
+   </div>
+   <div class="container">
+     <div class="row" id="userFormArea">
+     	<div class="col-md-12" id = "form-border">
+     		<form id="userForm">
+   	 			<div class="form-group">
+   	 				<label id ="Label-Text"><font size="15">Enter NickName</font> </label>
+   	 				<input class="form-control" id="username" required=""/>
+   	 				<br>
+   	 				<input type="submit" class="btn btn-primary" id="log" value="Login">
+            <input type="button" class="btn btn-primary" id="sign-Up" value="Sign Up">
+   	 			</div>
+   	 	</form>
+     	</div>
+     </div>
+
+   	 <div id="messageArea" class="row">
+   	 	<div class="col-md-4">
+   	 		<div class="well" id="list-user-d">
+   	 			<h1>Online Users</h1>
+   	 			<ul class="list-group" id="Users"></ul>
+   	 		</div>
+   	 	</div>
+   	 	<div class="col-md-8">
+   	 		<form id="messageForm">
+   	 			<div class="form-group">
+   	 				<!-- <label id="Label-Message">Enter Message</label> -->
+   	 				<textarea class="form-control" id="message" placeholder="Enter Message"></textarea>
+   	 				<br>
+   	 				<input type="submit" class="btn btn-primary" value="Send Message">
+   	 			</div>
+   	 		</form>
+   	 	</div>
+   	 </div>
+       <!-- <div class="chat" id="chat"></div> -->
+      <textarea cols="70" rows="5" disabled="" id="txtChat"></textarea>
+   </div>
+</body>
+</html>
